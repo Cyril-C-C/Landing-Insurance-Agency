@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    box-sizing: border-box; 
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .logo{
+    width: 11.4rem;
+    color: #4E4BDF;
+    font-size: 1.8rem;
+    margin-top: 0%;
+} */
+
+.logoo{
+    width: 10rem;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.nav-links ul li a::after{
+    content: "";
+    width: 0%;
+    height: 0.125rem;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+
+.helo-page{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/Rectangle2.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    position: absolute;
+    top: 65%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.helo-page .search{
+    position: relative;
+    width: 18.75rem;
+    height: 2.5rem;
+    margin: 1.25rem 4.9rem;
+}
+
+.helo-page .search input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: transparent;
+    outline: none;
+    border: 0.0625rem solid rgb(148, 145, 145);
+    border-radius: 1.25rem;
+    padding: 0 0.625rem 0 2.8125rem;
+}
+
+.helo-page .search input::placeholder{
+    color: rgb(148, 145, 145);
+}
+
+.helo-page .search .fa-search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.625rem;
+    color: rgb(148, 145, 145);
+    border-right: 0.0625rem solid rgb(148, 145, 145);
+    padding-right: 0.625rem;
+}
+
+.helo-page h2{
+    font-size: 3rem;
+    text-align: left;
+    margin-top: 10rem;
+    margin-left: 4.9rem;
+}
+
+.hero-btn{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    border: 0.0625rem solid #4E4BDF;
+    margin-left: 4.9rem;
+    padding: 0.75rem 2.125rem;
+    font-size: 1.6rem;
+    background: #4E4BDF;
+    position: absolute;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    color: #4E4BDF;
+    border: 0.0625rem solid white;
+    background: white;
+    transition: 1s;
+}
+
+.nav .fa{
+    display: none;
+}
+
+@media(max-width: 55.9rem){
+    .helo-page h2{
+        font-size: 2rem;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #4E4BDF;
+        height: 100vh;
+        width: 12.5rem;
+        top: 0;
+        right: -12.5rem;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .nav .fa{
+        display: block;
+        color: #4E4BDF;
+        margin: 0.625rem;
+        font-size: 1.375rem;
+        cursor: pointer;
+    }
+    .nav .times{
+        color: #ffffff;
+    }
+    .nav-links ul{
+        padding: 1.875rem;
+    }
+    .nav-links ul li a{
+        color: whitesmoke;
+    }
+    .helo-page .search{
+        margin-bottom: 20%;
+        width: 15.75rem;
+    }
+}
+
+/*----- Who We Are -----*/
+
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 6.25rem;
+}
+
+h4{
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #4E4BDF;
+    
+}
+
+p{
+    color: #000000;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0;
+    line-height: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.hero-btn1{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 0.0625rem solid #4E4BDF;
+    padding: 0.75rem 2.125rem;
+    font-size: 0.8125rem;
+    background: #4E4BDF;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn1:hover{
+    color: #4E4BDF;
+    border: 0.0625rem solid #4E4BDF;
+    background: white;
+    transition: 1s;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-column{
+    flex-basis: 31%;
+    background: white;
+    border-radius: 0.625rem;
+    margin-bottom: 5%;
+    padding: 1.25rem 0.75rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 1.25rem 0 rgb(194, 181, 181);
+}
+
+h5{
+    text-align: center;
+    font-weight: 600;
+    margin: 0.625rem;
+    margin-top: 2rem;
+}
+
+.info-column:hover{
+    box-shadow: 0 0 1.25rem 0 rgba(3, 19, 199, 0.2);
+}
+
+@media(max-width: 50rem){
+    .row{
+        flex-direction: column;
+    }
+    .about h4{
+            font-size: 1.25rem;
+        }
+}
+
+/*----- What Sets Us Apart -----*/
+
+.signIn{
+    clip-path: inset(20% 0 20% 0);
+    background-color: #4E4BDF;
+    margin: auto;
+    padding: 6.25rem 6.8rem;
+    text-align: center;
+}
+
+.row1{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.campus-column img{
+    width: 25rem;
+}
+
+.campus-column h6{
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    margin-left: 3rem;
+}
+
+.campus-column p{
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: left;
+    margin-left: 3rem;
+    padding: 1rem 0;
+    color: #ffffff;
+}
+
+.hero-btn2{
+    display: inline-block;
+    text-decoration: none;
+    color: #4E4BDF;
+    border: 0.0625rem solid white;
+    padding: 0.75rem 2.125rem;
+    font-size: 1.25rem;
+    background:white;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn2:hover{
+    color: white;
+    border: 0.0625rem solid #4E4BDF;
+    background: #4E4BDF;
+    transition: 1s;
+}
+
+@media(max-width: 50rem){
+    .row1{
+        flex-direction: column;
+    }
+}
+
+/*----- Why Choose Us -----*/
+
+.testimonials{
+    background: #ffffff;
+    width: 100%;
+    margin: 0;
+    padding-top: 6.25rem;
+    text-align: center;
+    position: relative;
+}
+
+h8{
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #4E4BDF;
+}
+
+.papa{
+    margin: 1rem 4rem;
+}
+
+.row2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: #4E4BDF;
+    /* clip-path: inset(2rem); */
+}
+
+.mission{
+    width: 80%;
+    background: #ffffff;
+    margin: 0rem 0 0 4.3rem;
+    text-align: left;
+}
+
+.mission img{
+    width: 100%;
+    height: 80%;
+}
+
+.mission1{
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.mission1 p{
+    text-align: left;
+}
+
+.tag{
+    position: relative;
+    background: #4E4BDF;
+    margin-bottom: 15rem;
+}
+
+.tag-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem;
+}
+
+.tag-item{
+    padding-right: 3.5rem;
+    border-right: 0.1rem solid #ffffff;
+}
+
+.tag-item p{
+    color: #ffffff;
+}
+
+@media(max-width: 50rem){
+    .row2{
+        flex-direction: column;
+    }
+
+    .tag-container{
+        flex-direction: column;
+    }
+}
+
+/* Providers */
+
+.providers{
+    text-align: center;
+}
+
+/* Testimonials */
+
+.testi-con{
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 35rem;
+    padding-top: 6.25rem;
+    background-image: url(images/Rectangle14.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.testi-it{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.class{
+    position: relative;
+    top: -1.5rem;
+    bottom: 0;
+    left: 7rem;
+    width: 4rem;
+    height: 3rem;
+}
+
+.class1{
+    position: relative;
+    top: 16.5rem;
+    bottom: 0;
+    right: 7rem;
+    width: 4rem;
+    height: 3rem;
+}
+
+.info-it{
+    flex-basis: 70%;
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+}
+
+.info-it p{
+    margin: 3.25rem;
+}
+
+.info-it img{
+    width: 15%;
+    margin-bottom: 1rem;
+}
+
+/*----- Contact ----- */
+
+.cta{
+    margin: 6.25rem auto;
+    min-height: 80vh;
+    width: 100%;
+    background-color: #4E4BDF;
+    padding: 6.25rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta-items p{
+    margin: 0 2.5rem 0 2.5rem;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.cta-items a{
+    color: #ffffffff;
+    font-size: 0.7rem;
+    text-decoration: none;
+}
+
+.cta-items a:hover{
+    color: red;
+}
+
+.cta-items a img{
+    width: 0.8rem;
+}
+
+.cta-items .fa{
+    color: white;
+    padding-right: 1rem;
+}
+
+.cta-items .fa:hover{
+    color: red;
+}
+
+@media(max-width: 50rem){
+    .cta{
+        flex-direction: column;
+    }
+
+    .cta-items p{
+        margin-bottom: 2rem;
+    }
+}
