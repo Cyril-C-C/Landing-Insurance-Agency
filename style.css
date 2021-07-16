@@ -187,6 +187,7 @@ html,body{
     .helo-page .search{
         margin-bottom: 20%;
         width: 15.75rem;
+        display: none;
     }
 }
 
@@ -268,13 +269,12 @@ h5{
     }
     .about h4{
             font-size: 1.25rem;
-        }
+    }
 }
 
 /*----- What Sets Us Apart -----*/
 
 .signIn{
-    clip-path: inset(20% 0 20% 0);
     background-color: #4E4BDF;
     margin: auto;
     padding: 6.25rem 6.8rem;
@@ -330,8 +330,22 @@ h5{
 }
 
 @media(max-width: 50rem){
+    .signIn{
+        margin: 0;
+        padding: 0;
+    }
     .row1{
         flex-direction: column;
+    }
+    .campus-column img{
+        width: 15rem;
+    }
+    .campus-column h6 {
+        margin-bottom: 1rem;
+    }
+    .campus-column p {
+        margin-left: 0;
+        padding: 2rem;
     }
 }
 
@@ -362,7 +376,6 @@ h8{
     justify-content: space-between;
     position: relative;
     background-color: #4E4BDF;
-    /* clip-path: inset(2rem); */
 }
 
 .mission{
@@ -411,9 +424,16 @@ h8{
     .row2{
         flex-direction: column;
     }
-
+    .mission{
+        margin-left: 2rem;
+    }
     .tag-container{
         flex-direction: column;
+        padding: 1rem;
+    }
+    .tag-item{
+        border-right: none;
+        padding-right: 0;
     }
 }
 
@@ -474,6 +494,18 @@ h8{
 .info-it img{
     width: 15%;
     margin-bottom: 1rem;
+}
+
+@media(max-width: 50rem){
+    .class{
+        display: none;
+    }
+    .class1{
+        display: none;
+    }
+    .info-it p{
+        margin: 1.25rem;
+    }
 }
 
 /*----- Contact ----- */
