@@ -466,7 +466,7 @@ h8{
 
 @media(max-width: 26.5625rem){
     .testimonials{
-        transform: translate(-50%, -10%);
+        transform: translate(-50%, -5%);
     }
 }
 
