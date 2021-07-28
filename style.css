@@ -150,7 +150,10 @@ html,body{
     display: none;
 }
 
-@media(max-width: 55.9rem){
+@media(max-width: 56.9rem){
+    .helo-page{
+        top: 75%;
+    }
     .helo-page h2{
         font-size: 2rem;
     }
@@ -196,8 +199,12 @@ html,body{
 .about{
     width: 80%;
     margin: auto;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -30%);
     text-align: center;
-    padding-top: 6.25rem;
+    padding-top: 1.25rem;
 }
 
 h4{
@@ -263,6 +270,12 @@ h5{
     box-shadow: 0 0 1.25rem 0 rgba(3, 19, 199, 0.2);
 }
 
+@media(max-width: 27rem){
+    .about{
+        transform: translate(-50%, -18%);
+    }
+}
+
 @media(max-width: 50rem){
     .row{
         flex-direction: column;
@@ -275,10 +288,15 @@ h5{
 /*----- What Sets Us Apart -----*/
 
 .signIn{
+    width: 100%;
     background-color: #4E4BDF;
     margin: auto;
     padding: 6.25rem 6.8rem;
     text-align: center;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -30%);
 }
 
 .row1{
@@ -349,15 +367,24 @@ h5{
     }
 }
 
+@media(max-width: 50rem){
+    .signIn{
+        transform: translate(-50%, -18%);
+    }
+}
+
 /*----- Why Choose Us -----*/
 
 .testimonials{
     background: #ffffff;
     width: 100%;
-    margin: 0;
+    margin: auto;
     padding-top: 6.25rem;
     text-align: center;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -15%);
 }
 
 h8{
@@ -437,10 +464,21 @@ h8{
     }
 }
 
+@media(max-width: 26.5625rem){
+    .testimonials{
+        transform: translate(-50%, -10%);
+    }
+}
+
 /* Providers */
 
 .providers{
+    width: 100%;
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -15%);
 }
 
 /* Testimonials */
@@ -448,12 +486,16 @@ h8{
 .testi-con{
     min-height: 100vh;
     width: 100%;
-    margin-top: 35rem;
+    margin-top: 0;
     padding-top: 6.25rem;
     background-image: url(images/Rectangle14.png);
     background-position: center;
     background-size: cover;
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
 }
 
 .testi-it{
@@ -511,13 +553,17 @@ h8{
 /*----- Contact ----- */
 
 .cta{
-    margin: 6.25rem auto;
+    margin: auto;
     min-height: 80vh;
     width: 100%;
     background-color: #4E4BDF;
     padding: 6.25rem 0;
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
 }
 
 .cta-items p{
@@ -556,5 +602,11 @@ h8{
 
     .cta-items p{
         margin-bottom: 2rem;
+    }
+}
+
+@media(max-width: 26.6rem){
+    .cta{
+        transform: translate(-50%, -25%);
     }
 }
