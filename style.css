@@ -199,10 +199,8 @@ html,body{
 .about{
     width: 80%;
     margin: auto;
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -30%);
+    margin-top: -35rem;
+    position: relative;
     text-align: center;
     padding-top: 1.25rem;
 }
@@ -270,10 +268,53 @@ h5{
     box-shadow: 0 0 1.25rem 0 rgba(3, 19, 199, 0.2);
 }
 
-@media(max-width: 27rem){
-    .about{
-        transform: translate(-50%, -18%);
-    }
+/*----- Who We Are (Edited)-----*/
+
+.about1{
+    width: 80%;
+    margin: 10rem auto;
+    position: relative;
+    text-align: center;
+    padding-top: 1.25rem;
+}
+
+.hero-btn12{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 0.0625rem solid #4E4BDF;
+    padding: 0.75rem 2.125rem;
+    font-size: 0.8125rem;
+    background: #4E4BDF;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn12:hover{
+    color: #4E4BDF;
+    border: 0.0625rem solid #4E4BDF;
+    background: white;
+    transition: 1s;
+}
+
+.row1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-column1{
+    flex-basis: 31%;
+    background: white;
+    border-radius: 0.625rem;
+    margin-bottom: 5%;
+    padding: 1.25rem 0.75rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 1.25rem 0 rgb(194, 181, 181);
+}
+
+.info-column1:hover{
+    box-shadow: 0 0 1.25rem 0 rgba(3, 19, 199, 0.2);
 }
 
 @media(max-width: 50rem){
@@ -281,6 +322,17 @@ h5{
         flex-direction: column;
     }
     .about h4{
+            font-size: 1.25rem;
+    }
+}
+
+/* Edited */
+
+@media(max-width: 50rem){
+    .row1{
+        flex-direction: column;
+    }
+    .about1 h4{
             font-size: 1.25rem;
     }
 }
@@ -293,7 +345,7 @@ h5{
     margin: auto;
     padding: 6.25rem 6.8rem;
     text-align: center;
-    position: absolute;
+    position: relative;
     top: 50%; 
     left: 50%;
     transform: translate(-50%, -30%);
@@ -347,6 +399,65 @@ h5{
     transition: 1s;
 }
 
+/*----- What Sets Us Apart (Edited) -----*/
+
+.signIn1{
+    width: 100%;
+    background-color: #4E4BDF;
+    margin: auto;
+    padding: 6.25rem 6.8rem;
+    text-align: center;
+    position: relative;
+}
+
+.row12{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.campus-column1 img{
+    width: 25rem;
+}
+
+.campus-column1 h6{
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    margin-left: 3rem;
+}
+
+.campus-column1 p{
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: left;
+    margin-left: 3rem;
+    padding: 1rem 0;
+    color: #ffffff;
+}
+
+.hero-btn23{
+    display: inline-block;
+    text-decoration: none;
+    color: #4E4BDF;
+    border: 0.0625rem solid white;
+    padding: 0.75rem 2.125rem;
+    font-size: 1.25rem;
+    background:white;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn23:hover{
+    color: white;
+    border: 0.0625rem solid #4E4BDF;
+    background: #4E4BDF;
+    transition: 1s;
+}
+
 @media(max-width: 50rem){
     .signIn{
         margin: 0;
@@ -370,6 +481,28 @@ h5{
 @media(max-width: 50rem){
     .signIn{
         transform: translate(-50%, -18%);
+    }
+}
+
+/* Edited */
+
+@media(max-width: 50rem){
+    .signIn1{
+        margin: 0;
+        padding: 0;
+    }
+    .row12{
+        flex-direction: column;
+    }
+    .campus-column1 img{
+        width: 15rem;
+    }
+    .campus-column1 h6 {
+        margin-bottom: 1rem;
+    }
+    .campus-column1 p {
+        margin-left: 0;
+        padding: 2rem;
     }
 }
 
@@ -446,6 +579,70 @@ h8{
     color: #ffffff;
 }
 
+/*----- Why Choose Us (Edited) -----*/
+
+.testimonials1{
+    background: #ffffff;
+    width: 100%;
+    margin: 10rem auto;
+    text-align: center;
+    position: relative;
+}
+
+.papa1{
+    margin: 1rem 4rem;
+}
+
+.row23{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: #4E4BDF;
+}
+
+.mission1{
+    width: 80%;
+    background: #ffffff;
+    margin: 0rem 0 0 4.3rem;
+    text-align: left;
+}
+
+.mission1 img{
+    width: 100%;
+    height: 80%;
+}
+
+.mission12{
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.mission12 p{
+    text-align: left;
+}
+
+.tag1{
+    position: relative;
+    background: #4E4BDF;
+    margin-bottom: 15rem;
+}
+
+.tag-container1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem;
+}
+
+.tag-item1{
+    padding-right: 3.5rem;
+    border-right: 0.1rem solid #ffffff;
+}
+
+.tag-item1 p{
+    color: #ffffff;
+}
+
 @media(max-width: 50rem){
     .row2{
         flex-direction: column;
@@ -466,6 +663,25 @@ h8{
 @media(max-width: 26.5625rem){
     .testimonials{
         transform: translate(-50%, -5%);
+    }
+}
+
+/* Edited */
+
+@media(max-width: 50rem){
+    .row23{
+        flex-direction: column;
+    }
+    .mission1{
+        margin-left: 2rem;
+    }
+    .tag-container1{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .tag-item1{
+        border-right: none;
+        padding-right: 0;
     }
 }
 
@@ -594,6 +810,48 @@ h8{
     color: red;
 }
 
+/*----- Contact (Edited) ----- */
+
+.cta1{
+    margin: -15rem auto;
+    min-height: 80vh;
+    width: 100%;
+    background-color: #4E4BDF;
+    padding: 6.25rem 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cta-items1 p{
+    margin: 0 2.5rem 0 2.5rem;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.cta-items1 a{
+    color: #ffffffff;
+    font-size: 0.7rem;
+    text-decoration: none;
+}
+
+.cta-items1 a:hover{
+    color: red;
+}
+
+.cta-items1 a img{
+    width: 0.8rem;
+}
+
+.cta-items1 .fa{
+    color: white;
+    padding-right: 1rem;
+}
+
+.cta-items1 .fa:hover{
+    color: red;
+}
+
 @media(max-width: 50rem){
     .cta{
         flex-direction: column;
@@ -607,5 +865,17 @@ h8{
 @media(max-width: 26.6rem){
     .cta{
         transform: translate(-50%, -25%);
+    }
+}
+
+/* Edited */
+
+@media(max-width: 50rem){
+    .cta1{
+        flex-direction: column;
+    }
+
+    .cta-items1 p{
+        margin-bottom: 2rem;
     }
 }
