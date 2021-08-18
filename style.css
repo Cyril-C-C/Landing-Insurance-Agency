@@ -71,14 +71,14 @@ html,body{
 }
 
 .helo-page{
-    min-height: 100vh;
+    min-height: 86vh;
     width: 100%;
-    background-image: url(images/Rectangle2.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/land.jpg);
     background-position: center;
     background-size: cover;
     color: white;
     position: absolute;
-    top: 65%; 
+    top: 57%; 
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -146,6 +146,15 @@ html,body{
     transition: 1s;
 }
 
+.helo-page img{
+    position: absolute;
+    width: 60%;
+    top: 0.5%;
+    left: 45%;
+    z-index: -1;
+    opacity: 5%;
+}
+
 .nav .fa{
     display: none;
 }
@@ -156,6 +165,9 @@ html,body{
     }
     .helo-page h2{
         font-size: 2rem;
+    }
+    .helo-page img{
+        display: none;
     }
     .nav-links ul li{
         display: block;
@@ -272,7 +284,7 @@ h5{
 
 .about1{
     width: 80%;
-    margin: 10rem auto;
+    margin: 1rem auto;
     position: relative;
     text-align: center;
     padding-top: 1.25rem;
@@ -584,7 +596,7 @@ h8{
 .testimonials1{
     background: #ffffff;
     width: 100%;
-    margin: 10rem auto;
+    margin: 4rem auto;
     text-align: center;
     position: relative;
 }
@@ -813,8 +825,8 @@ h8{
 /*----- Contact (Edited) ----- */
 
 .cta1{
-    margin: -15rem auto;
-    min-height: 80vh;
+    margin: -10rem auto;
+    min-height: 30vh;
     width: 100%;
     background-color: #4E4BDF;
     padding: 6.25rem 0;
@@ -878,4 +890,14 @@ h8{
     .cta-items1 p{
         margin-bottom: 2rem;
     }
+}
+
+.copy{
+    width: 100%;
+    position: absolute;
+    font-size: 0.8rem;
+    background: #fff;
+    text-align: right;
+    margin-top: 8rem;
+    padding: 2rem;
 }
