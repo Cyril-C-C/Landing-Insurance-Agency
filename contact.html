@@ -1,92 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
-      <link
-        rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
-      <link rel="stylesheet" type="text/css" href="./style.css" />
-      <!-- <link rel="shortcut icon" href="icon.ico" /> -->
-      <title>Landing Insurance Agency</title>
-  </head>
+<html>
 
-  <body>
-    <header class="header" id="header">
-      <section class="navbar" id="navbar">
-        <nav class="nav" id="nav">
-          <!-- <h1 class="logo">
-            Landing<br><span style="font-size: 0.7rem; color: #000000;"; >Insurance Agency</span>
-          </h1> -->
-          <a href="/index.html"><img class="logoo" src="images/Groupx.png"></a>
-          <section class="nav-links" id="navLinks">
-            <i class="fa fa-times times" onclick="hideMenu()"></i>
-            <ul>
-              <!-- <li><a href="#header">HOME</a></li> -->
-              <li><a href="/about.html">About</a></li>
-              <li><a href="/BI.html">Business Insurance</a></li>
-              <li><a href="/PI.html">Personal Insurance</a></li>
-              <li><a href="/contact.html">Contact Us</a></li>
-              <li><a href="/bloq.html">Bloq</a></li>
-              <li><a href="/covid19.html">COVID-19</a></li>
-            </ul>
-          </section>
-          <i class="fa fa-bars" onclick="showMenu()"></i>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Landing Insurance Agency</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header" id="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/Groupx.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" id="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/BI.html">Business Insurance</a></li>
+                    <li><a href="/PI.html">Personal Insurance</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" id="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-      </section>
-    </header>
+        <h1>Contact Us</h1>
+    </section>
 
-       <!-- Contact Us -->
 
-       <section class="cta" id="cta">
+    <!------ contact us ------>
 
-        <section class="cta-items" id="cta-items">
-          <p>
-            <span style="color: #ffffff;">Contact Us</span><br>
-            <a href="#" target="_blank"
-            ><img src="images/Groupb.png"></i
-          >   +2345678909</a><br>
-          <a href="#" target="_blank"
-            ><img src="images/Groupc.png"></i
-          >   Info@landingpage.com</a><br>
-          <a href="#" target="_blank"
-            ><img src="images/Group33.png"></i
-          >   Lorem ipsum dolor sit amet.</a>
-          </p>
-        </section>
-  
-        <section class="cta-items" id="cta-items">
-          <p>
-            <span style="color: #ffffff;">Sitemap</span><br>
-            <a href="#" ></i>Home</a><br>
-            <a href="#" ></i>About Us</a><br>
-            <a href="#" ></i>Business Insurance</a><br>
-            <a href="#" ></i>Private Insurance</a><br>
-            <a href="#" ></i>Private Client Services</a><br>
-            <a href="#" ></i>Contact Us</a><br>
-            <a href="#" ></i>COVID-19</a>
-          </p>
-        </section>
-  
-        <section class="cta-items" id="cta-items">
-          <p>
-            <span style="color: #ffffff;">Stay Connected</span><br>
-            <a href="#" target="_blank"
-            ><i class="fa fa-facebook"></i
-          ></a>
-          <a href="#" target="_blank"
-            ><i class="fa fa-twitter"></i
-          ></a>
-          <a href="#" target="_blank"
-            ><i class="fa fa-instagram"></i
-          ></a>
-          </p>
-        </section>
-  
-      </section>
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63416.569565366364!2d3.3153069593755027!3d6.580137081693901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9210951dba3d%3A0xc3d4b92e003891c!2sIkeja%20GRA%20101233%2C%20Ikeja!5e0!3m2!1sen!2sng!4v1628507358286!5m2!1sen!2sng"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-    <script src="./app.js"></script>
-  </body>
+    </section>
+
+    <section class="contact-us" id="contact-us">
+
+        <div class="row" id="row">
+            <div class="contact-col" id="contact-col">
+                <div>
+                    <i class="fa fa-home" id="fa fa-home"></i>
+                    <span>
+                        <h5>Gerald 12 - GRA Road, 2AC Block</h5>
+                        <p>Lagos, Ikeja, GRA</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone" id="fa fa-phone"></i>
+                    <span>
+                        <h5>+2348024472676</h5>
+                        <p>Monday to Saturday, 9am to 7pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o" id="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@landinginsuranceagency.com</h5>
+                        <p>Email us your inquiry</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col" id="contact-col">
+
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your Email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="Message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn" id="hero-btn red-btn">Send Message</button>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!------ Footer ------>
+
+    <section class="footer" id="footer">
+        <h4>About Us</h4>
+        <p>An independant insurance company that focuses on you. We believe you
+          deserve top quality individuals and expertise from our office; and that
+          is the foundation on which we have built our teams.</p>
+        <div class="icons">
+            <i class="fa fa-facebook" id="fa fa-facebook"></i>
+            <i class="fa fa-twitter" id="fa fa-twitter"></i>
+            <i class="fa fa-instagram" id="fa fa-instagram"></i>
+            <i class="fa fa-linkedin" id="fa fa-linkedin"></i>
+        </div>
+        <p>Copyright @2021.     Keyla Tech</p>
+    </section>
+
+    <!---------JavaScript for Toggle Meun-------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
 </html>
