@@ -777,6 +777,25 @@ h8{
     }
 }
 
+/* Partner */
+
+.partners{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 10rem;
+}
+
+.part p{
+    font-size: 1.5rem;
+    color: #4E4BDF;
+}
+
+.part img{
+    width: 50%;
+    height: 50%;
+}
+
 /*----- Contact ----- */
 
 .cta{
