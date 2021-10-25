@@ -21,10 +21,13 @@ html,body{
 }
 
 .nav{
+    position: fixed;
+    background-color: white;
     display: flex;
-    padding: 2% 6%;
     justify-content: space-between;
+    padding: 2% 6%;
     align-items: center;
+    z-index: 1;
 }
 
 /* .logo{
@@ -36,6 +39,7 @@ html,body{
 
 .logoo{
     width: 10rem;
+    margin-right: 25.05rem;
 }
 
 .nav-links{
@@ -171,6 +175,10 @@ html,body{
     }
     .nav-links ul li{
         display: block;
+    }
+    .nav{
+        position: relative;
+        background-color: none;
     }
     .nav-links{
         position: absolute;
@@ -783,7 +791,7 @@ h8{
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin: 10rem;
+    margin: 10rem 2rem;
 }
 
 .part p{
